@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "certificates": "Sertifikat",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "greeting": "Halo, Saya",
+    "title": "Fullstack Developer — Ahli Java Spring Boot & React.js",
+    "description": "Membangun sistem backend yang kuat dan antarmuka pengguna yang dinamis dengan teknologi modern. Bersemangat tentang kode yang bersih dan arsitektur yang skalabel.",
+    "contactMe": "Hubungi Saya",
+    "viewProjects": "Lihat Proyek",
+    "downloadCV": "Unduh CV",
+    "downloadCVEn": "Unduh CV (Inggris)",
+    "downloadCVId": "Unduh CV (Indonesia)"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "education": "Pendidikan",
+    "organizations": "Organisasi",
+    "skills": "Keterampilan",
+    "pubScholarship": "Beasiswa PUB (Pemberdayaan Masyarakat Berkelanjutan)",
+    "projects": "Proyek",
+    "code": "Kode",
+    "demo": "Demo",
+    "downloadCV": "Unduh CV"
+  },
+  "projects": {
+    "title": "Proyek",
+    "description": "Kumpulan karya saya yang menampilkan pengembangan full-stack, sistem backend, dan aplikasi frontend.",
+    "filterBy": "Filter berdasarkan:",
+    "all": "Semua",
+    "fullStack": "Full-Stack",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "featured": "Unggulan",
+    "code": "Kode",
+    "demo": "Demo",
+    "noProjects": "Tidak ada proyek yang ditemukan dalam kategori ini."
+  },
+  "certificates": {
+    "title": "Sertifikat",
+    "description": "Sertifikasi profesional dan pencapaian pelatihan sepanjang perjalanan belajar saya.",
+    "filterBy": "Filter berdasarkan jenis:",
+    "all": "Semua",
+    "training": "Pelatihan",
+    "bootcamp": "Bootcamp",
+    "other": "Lainnya",
+    "viewCertificate": "Lihat Sertifikat",
+    "noCertificates": "Tidak ada sertifikat yang ditemukan dalam kategori ini."
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "description": "Punya proyek atau ingin berkolaborasi? Jangan ragu untuk menghubungi!",
+    "contactInfo": "Informasi Kontak",
+    "email": "Email",
+    "location": "Lokasi",
+    "connectWithMe": "Terhubung dengan saya",
+    "sendMessage": "Kirim Pesan",
+    "name": "Nama",
+    "namePlaceholder": "Nama Anda",
+    "emailPlaceholder": "email.anda@example.com",
+    "message": "Pesan",
+    "messagePlaceholder": "Pesan Anda...",
+    "sendBtn": "Kirim Pesan",
+    "required": "*",
+    "successTitle": "Pesan Terkirim!",
+    "successDescription": "Terima kasih telah menghubungi. Saya akan segera merespons.",
+    "errorTitle": "Kesalahan",
+    "errorEmpty": "Silakan isi semua bidang yang diperlukan.",
+    "errorMessageTooShort": "Pesan harus minimal 10 karakter.",
+    "errorSendFailed": "Gagal mengirim pesan. Silakan coba lagi atau hubungi langsung.",
+    "sending": "Mengirim...",
+    "spamDetected": "Pengiriman terdeteksi sebagai spam. Silakan coba lagi."
+  },
+  "footer": {
+    "copyright": "Hak cipta dilindungi.",
+    "builtWith": "Dibuat dengan Vite, React & Typescript"
+  }
+}
