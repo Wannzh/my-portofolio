@@ -214,7 +214,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Training on programming fundamentals and basic algorithms using C.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 2,
@@ -223,7 +223,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Training on advanced C data structures and MySQL database fundamentals.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 3,
@@ -232,7 +232,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Training on HTML, CSS, and JavaScript for web fundamentals.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 4,
@@ -241,7 +241,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Training on version control and collaborative workflows.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 5,
@@ -250,7 +250,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Training on Object-Oriented Programming (OOP) and core Java.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 6,
@@ -259,7 +259,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Training on building RESTful APIs with the Spring Boot framework.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 7,
@@ -268,7 +268,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Training on modern frontend development using the React library.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       }
     ]
   },
@@ -479,7 +479,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Pelatihan fundamental pemrograman dan algoritma dasar menggunakan C.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 2,
@@ -488,7 +488,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Pelatihan struktur data C lanjutan dan fundamental database MySQL.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 3,
@@ -497,7 +497,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Pelatihan fundamental web dengan HTML, CSS, dan JavaScript.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 4,
@@ -506,7 +506,7 @@ const data: Record<string, PortfolioData> = {
         year: "2024",
         description: "Pelatihan version control dan alur kerja kolaboratif.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 5,
@@ -515,7 +515,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Pelatihan Object-Oriented Programming (OOP) dan inti Java.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 6,
@@ -524,7 +524,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Pelatihan membangun RESTful API dengan framework Spring Boot.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       },
       {
         id: 7,
@@ -533,7 +533,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Pelatihan pengembangan frontend modern menggunakan library React.",
         type: "Training",
-        fileUrl: "#" // Ganti '#' dengan URL sertifikat Anda
+        fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
       }
     ]
   }
