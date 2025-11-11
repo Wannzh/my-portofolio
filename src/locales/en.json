@@ -75,6 +75,11 @@
     "sending": "Sending...",
     "spamDetected": "Submission detected as spam. Please try again."
   },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or is not available.",
+    "backBtn": "Back to home"
+  },
   "footer": {
     "copyright": "All rights reserved.",
     "builtWith": "Built with Vite, React & Typescript"

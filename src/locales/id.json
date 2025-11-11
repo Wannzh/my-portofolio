@@ -75,6 +75,11 @@
     "sending": "Mengirim...",
     "spamDetected": "Pengiriman terdeteksi sebagai spam. Silakan coba lagi."
   },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "description": "Halaman yang Anda cari tidak ada atau tidak tersedia.",
+    "backBtn": "Kembali ke beranda"
+  },
   "footer": {
     "copyright": "Hak cipta dilindungi.",
     "builtWith": "Dibuat dengan Vite, React & Typescript"
