@@ -1,73 +1,141 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Personal Portfolio Website
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/Live-Demo-1c1c1c?style=for-the-badge&logo=vercel)](https://portofolio.alwanfdh.my.id)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-## React Compiler
+[**View Live Demo →**](https://portofolio.alwanfdh.my.id)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🌍 **Multi-language Support** - English & Indonesian (i18n)
+- 🌙 **Dark Theme** - Modern dark mode design
+- 📱 **Responsive Design** - Works on all devices
+- ⚡ **Fast Performance** - Built with Vite for optimal speed
+- 🎨 **Smooth Animations** - Powered by Framer Motion
+- 📄 **Downloadable CV** - Available in EN & ID versions
+- 📜 **Certificate Viewer** - View & download certificates
+- 📬 **Contact Form** - Integrated with EmailJS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+| Category       | Technologies            |
+| -------------- | ----------------------- |
+| **Framework**  | React 18, TypeScript    |
+| **Build Tool** | Vite 5                  |
+| **Styling**    | Tailwind CSS, shadcn/ui |
+| **Animation**  | Framer Motion           |
+| **i18n**       | react-i18next           |
+| **Icons**      | Lucide React            |
+| **Email**      | EmailJS                 |
+| **Deployment** | Netlify / Vercel        |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended) or npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Wannzh/my-portofolio.git
+
+# Navigate to project directory
+cd my-portofolio
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Build for Production
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Build the project
+pnpm build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Preview production build
+pnpm preview
 ```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+│   ├── ui/          # shadcn/ui components
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   └── Footer.tsx
+├── pages/           # Page components
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   ├── Certificates.tsx
+│   └── Contact.tsx
+├── locales/         # i18n translations
+│   ├── en.json
+│   └── id.json
+├── mockData.ts      # Portfolio data
+├── App.tsx          # Main app component
+└── main.tsx         # Entry point
+```
+
+---
+
+## 📝 Customization
+
+### Update Portfolio Data
+
+Edit `src/mockData.ts` to update:
+
+- Personal information
+- Projects
+- Skills
+- Certificates
+- Education
+
+### Update Translations
+
+Edit files in `src/locales/`:
+
+- `en.json` - English translations
+- `id.json` - Indonesian translations
+
+### Add Certificates
+
+1. Add PDF files to `public/assets/certificates/`
+2. Update `mockData.ts` with certificate info
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**Made with ❤️ by [Muhamad Alwan Fadhlurrohman](https://portofolio.alwanfdh.my.id)**
+
+</div>
