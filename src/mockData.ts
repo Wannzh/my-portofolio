@@ -358,7 +358,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Bootcamp certification on leveraging Generative AI technologies for software development workflows and productivity enhancement.",
         type: "Bootcamp",
-        fileUrl: "/assets/certificates/ibm-generative-ai-mdl504.pdf"
+        fileUrl: "/assets/certificates/IBM_SkillsBuild_Generative_AI_for_Software_Development.pdf"
       },
       {
         id: 9,
@@ -367,7 +367,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Bootcamp certification on utilizing IBM Granite foundation models for software development tasks and applications.",
         type: "Bootcamp",
-        fileUrl: "/assets/certificates/ibm-granite-models-mdl567.pdf"
+        fileUrl: "/assets/certificates/IBM_SkillsBuild_Granite_Models_for_Software_Development.pdf"
       },
       {
         id: 10,
@@ -376,7 +376,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Bootcamp certification on code generation and optimization techniques using IBM Granite AI models.",
         type: "Bootcamp",
-        fileUrl: "/assets/certificates/ibm-code-generation-mdl566.pdf"
+        fileUrl: "/assets/certificates/IBM_SkillsBuild_Code_Generation_and_Optimization.pdf"
       }
     ]
   },
@@ -731,7 +731,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Sertifikasi bootcamp tentang pemanfaatan teknologi Generative AI untuk alur kerja dan peningkatan produktivitas pengembangan perangkat lunak.",
         type: "Bootcamp",
-        fileUrl: "/assets/certificates/ibm-generative-ai-mdl504.pdf"
+        fileUrl: "/assets/certificates/IBM_SkillsBuild_Generative_AI_for_Software_Development.pdf"
       },
       {
         id: 9,
@@ -740,7 +740,7 @@ const data: Record<string, PortfolioData> = {
         year: "2025",
         description: "Sertifikasi bootcamp tentang penggunaan model foundation IBM Granite untuk tugas dan aplikasi pengembangan perangkat lunak.",
         type: "Bootcamp",
-        fileUrl: "/assets/certificates/ibm-granite-models-mdl567.pdf"
+        fileUrl: "/assets/certificates/IBM_SkillsBuild_Granite_Models_for_Software_Development.pdf"
       },
       {
         id: 10,
