@@ -2,7 +2,7 @@ import { getPortfolioData } from "../mockData";
 import type { Certificate } from "../mockData";
 import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Award, Download, Filter } from "lucide-react";
+import { Award, Filter, Eye, EyeOff } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Certificates = () => {
@@ -30,7 +30,7 @@ const Certificates = () => {
   // Add loading state when filter changes
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 400); // Simulate loading
+    const timer = setTimeout(() => setLoading(false), 400);
     return () => clearTimeout(timer);
   }, [filter, lang]);
 
@@ -57,12 +57,10 @@ const Certificates = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          {/* CHANGED: Teks di-hardcode diganti */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#ffffff] mb-4 font-mono">
             {t("certificates.title")}
           </h1>
           <div className="w-24 h-1 bg-[#ffffff] mx-auto mb-8" />
-          {/* CHANGED: Teks di-hardcode diganti */}
           <p className="text-[#e0e0e0] text-lg max-w-2xl mx-auto">
             {t("certificates.description")}
           </p>
@@ -77,7 +75,6 @@ const Certificates = () => {
         >
           <div className="flex items-center justify-center gap-2 mb-4">
             <Filter size={20} className="text-[#e0e0e0]" />
-            {/* CHANGED: Teks di-hardcode diganti */}
             <span className="text-[#e0e0e0] font-mono">
               {t("certificates.filterBy")}
             </span>
@@ -93,7 +90,6 @@ const Certificates = () => {
                     : "bg-transparent text-[#e0e0e0] border-[#444] hover:border-[#666]"
                 }`}
               >
-                {/* CHANGED: Gunakan pemetaan kunci untuk menerjemahkan teks tombol */}
                 {t(`certificates.${typeKeys[type]}`)}
               </button>
             ))}
@@ -144,20 +140,29 @@ const Certificates = () => {
                     {cert.description}
                   </p>
 
-                  {/* Download Button */}
+                  {/* View Button */}
                   <button
                     onClick={() => {
-                      if (cert.fileUrl === "*") {
-                        window.open(cert.fileUrl, "_self");
-                      } else {
+                      if (cert.fileUrl !== "*") {
                         window.open(cert.fileUrl, "_blank");
                       }
                     }}
-                    className="flex items-center justify-center gap-2 px-4 py-2 bg-[#ffffff] text-[#1c1c1c] rounded hover:bg-[#e0e0e0] transition-colors duration-300 font-medium"
+                    disabled={cert.fileUrl === "*"}
+                    className={`flex items-center justify-center gap-2 px-4 py-2 rounded transition-colors duration-300 font-medium ${
+                      cert.fileUrl === "*"
+                        ? "bg-[#333] text-[#666] cursor-not-allowed"
+                        : "bg-[#ffffff] text-[#1c1c1c] hover:bg-[#e0e0e0] cursor-pointer"
+                    }`}
                   >
-                    <Download size={16} />
+                    {cert.fileUrl === "*" ? (
+                      <EyeOff size={16} />
+                    ) : (
+                      <Eye size={16} />
+                    )}
                     <span className="text-sm">
-                      {t("certificates.viewCertificate")}
+                      {cert.fileUrl === "*"
+                        ? t("certificates.notAvailable")
+                        : t("certificates.viewCertificate")}
                     </span>
                   </button>
                 </motion.div>

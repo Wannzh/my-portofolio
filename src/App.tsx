@@ -1,12 +1,13 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Certificates from './pages/Certificates';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Certificates from "./pages/Certificates";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import Footer from "./components/Footer";
 
 const HomePage = () => (
   <div>
@@ -14,14 +15,26 @@ const HomePage = () => (
   </div>
 );
 
+// ScrollToTop component - scrolls to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function AppRoutes() {
   const location = useLocation();
 
-  const layoutPaths = ['/', '/about', '/projects', '/certificates', '/contact'];
+  const layoutPaths = ["/", "/about", "/projects", "/certificates", "/contact"];
   const showLayout = layoutPaths.includes(location.pathname);
 
   return (
     <div className="App min-h-screen bg-[#1c1c1c] text-[#e0e0e0]">
+      <ScrollToTop />
       {showLayout && <Navbar />}
 
       <Routes>

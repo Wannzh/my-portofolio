@@ -49,6 +49,7 @@
     "bootcamp": "Bootcamp",
     "other": "Lainnya",
     "viewCertificate": "Lihat Sertifikat",
+    "notAvailable": "Sertifikat belum tersedia",
     "noCertificates": "Tidak ada sertifikat yang ditemukan dalam kategori ini."
   },
   "contact": {

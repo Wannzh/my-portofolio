@@ -49,6 +49,7 @@
     "bootcamp": "Bootcamp",
     "other": "Other",
     "viewCertificate": "View Certificate",
+    "notAvailable": "Certificate not available",
     "noCertificates": "No certificates found in this category."
   },
   "contact": {

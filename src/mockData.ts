@@ -46,10 +46,10 @@ const data: Record<string, PortfolioData> = {
       }
     ],
     skills: {
-      backend: ["Java", "Spring Boot", "Spring Security", "RESTful APIs", "Hibernate/JPA", "PHP"],
+      backend: ["Java", "Spring Boot", "Spring Security", "RESTful APIs", "Hibernate/JPA", "Python", "FastAPI", "Node.js", "Express", "PHP"],
       frontend: ["React", "JavaScript (ES6+)", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Thymeleaf"],
       database: ["MySQL", "PostgreSQL", "SQL"],
-      tools: ["Git & GitHub", "Docker", "Postman", "Swagger", "Render", "Vercel"]
+      tools: ["Git & GitHub", "Docker", "Postman", "Swagger", "Render", "Vercel", "PlatformIO"]
     },
     pubScholarship: {
       title: "PUB (Sustainable Community Empowerment) Scholarship",
@@ -177,6 +177,16 @@ const data: Record<string, PortfolioData> = {
               techStack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
               category: "Frontend",
               featured: false
+            },
+            {
+              id: 3,
+              title: "Greeceri Store - Full-Stack E-Commerce (Final Project)",
+              description: "Developed a complete full-stack e-commerce platform for fresh grocery shopping. Built the frontend with React + Vite and backend with Java Spring Boot. Integrated Xendit payment gateway and Google OAuth for seamless user authentication.",
+              githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
+              liveDemoUrl: "https://www.greeceri.store/",
+              techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth"],
+              category: "Full-Stack",
+              featured: true
             }
           ]
         }
@@ -204,7 +214,78 @@ const data: Record<string, PortfolioData> = {
         featured: true,
         category: "Full-Stack"
       },
-      
+      {
+        id: 3,
+        title: "Greeceri Store - Full-Stack E-Commerce Platform",
+        description: "A complete full-stack e-commerce platform for fresh grocery shopping. Built the frontend with React + Vite and backend with Java Spring Boot. Features include Xendit payment gateway integration and Google OAuth for seamless user authentication.",
+        githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
+        liveDemoUrl: "https://www.greeceri.store/",
+        techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth", "REST API"],
+        image: "fullstack",
+        featured: true,
+        category: "Full-Stack"
+      },
+      {
+        id: 4,
+        title: "SmartLED Controller - IoT Android App",
+        description: "IoT MQTT Controller is an Android application for controlling ESP8266-based IoT devices (Wemos D1 Mini) using MQTT protocol. The app enables users to turn LEDs on/off in real-time and displays IoT device connection status.",
+        githubUrl: "https://github.com/Wannzh/iot-mqtt-controller-android.git",
+        techStack: ["Java", "Android Studio", "Eclipse Paho MQTT Client", "Material Components"],
+        image: "mobile",
+        featured: false,
+        category: "Mobile"
+      },
+      {
+        id: 5,
+        title: "SmartLED Controller - ESP8266 Firmware",
+        description: "IoT project for controlling LEDs using WEMOS D1 Mini (ESP8266-based) development board via MQTT protocol. Developed with PlatformIO and Arduino framework.",
+        githubUrl: "https://github.com/Wannzh/iot-mqtt-controller-esp8266.git",
+        techStack: ["ESP8266", "Arduino Framework", "PlatformIO", "PubSubClient", "MQTT"],
+        image: "iot",
+        featured: false,
+        category: "IoT"
+      },
+      {
+        id: 6,
+        title: "QuickPOS - Freelance Point of Sale System",
+        description: "Professional freelance project developed independently. A web-based Point of Sale (POS) application built using FastAPI with layered architecture. Uses .txt files as data storage (file-based storage) for lightweight deployment.",
+        githubUrl: "https://github.com/Wannzh/pos-web-python.git",
+        techStack: ["Python 3.10+", "FastAPI", "HTML", "CSS", "Jinja2 Templates", "Lucide Icons"],
+        image: "fullstack",
+        featured: false,
+        category: "Full-Stack"
+      },
+      {
+        id: 7,
+        title: "DigiLib - Freelance Digital Library System",
+        description: "Professional freelance project developed collaboratively with a 2-member team. A comprehensive digital library management system built as a final thesis project for SMA Negeri 2 Plus Sipirok. Features include user management, book catalog, borrowing/returning transactions, and digital reports. Responsible for backend architecture and API development.",
+        githubUrl: "https://github.com/Wannzh/Perpustakaan.git",
+        techStack: ["Java 21", "Spring Boot", "Spring Data JPA", "Spring Security", "MySQL", "Maven", "React.js", "Axios", "Tailwind CSS", "React Router DOM", "Vite"],
+        image: "fullstack",
+        featured: true,
+        category: "Full-Stack"
+      },
+      {
+        id: 8,
+        title: "AnimeVault API - Anime Gallery REST Service",
+        description: "A lightweight REST API providing anime information data in JSON format. Built with Express.js and designed for frontend consumption with clean endpoint structure.",
+        githubUrl: "https://github.com/Wannzh/API-GALERI-ANIME.git",
+        techStack: ["Node.js", "Express", "REST API", "JSON"],
+        image: "backend",
+        featured: false,
+        category: "Backend"
+      },
+      {
+        id: 9,
+        title: "ShoeCatalog API - Product Catalog REST Service",
+        description: "A simple REST API application serving shoe catalog data to clients. All product information is stored in local static files and distributed through HTTP endpoints.",
+        githubUrl: "https://github.com/Wannzh/API-SEPATU.git",
+        techStack: ["Node.js", "Express", "REST API", "JSON"],
+        image: "backend",
+        featured: false,
+        category: "Backend"
+      },
+
     ],
     certificates: [
       {
@@ -269,6 +350,33 @@ const data: Record<string, PortfolioData> = {
         description: "Training on modern frontend development using the React library.",
         type: "Training",
         fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
+      },
+      {
+        id: 8,
+        title: "Use Generative AI for Software Development (MDL-504)",
+        issuer: "IBM SkillsBuild",
+        year: "2025",
+        description: "Bootcamp certification on leveraging Generative AI technologies for software development workflows and productivity enhancement.",
+        type: "Bootcamp",
+        fileUrl: "/assets/certificates/ibm-generative-ai-mdl504.pdf"
+      },
+      {
+        id: 9,
+        title: "IBM Granite Models for Software Development (MDL-567)",
+        issuer: "IBM SkillsBuild",
+        year: "2025",
+        description: "Bootcamp certification on utilizing IBM Granite foundation models for software development tasks and applications.",
+        type: "Bootcamp",
+        fileUrl: "/assets/certificates/ibm-granite-models-mdl567.pdf"
+      },
+      {
+        id: 10,
+        title: "Code Generation and Optimization Using IBM Granite (MDL-566)",
+        issuer: "IBM SkillsBuild",
+        year: "2025",
+        description: "Bootcamp certification on code generation and optimization techniques using IBM Granite AI models.",
+        type: "Bootcamp",
+        fileUrl: "/assets/certificates/ibm-code-generation-mdl566.pdf"
       }
     ]
   },
@@ -311,10 +419,10 @@ const data: Record<string, PortfolioData> = {
       }
     ],
     skills: {
-      backend: ["Java", "Spring Boot", "Spring Security", "RESTful APIs", "Hibernate/JPA", "PHP"],
+      backend: ["Java", "Spring Boot", "Spring Security", "RESTful APIs", "Hibernate/JPA", "Python", "FastAPI", "Node.js", "Express", "PHP"],
       frontend: ["React", "JavaScript (ES6+)", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Thymeleaf"],
       database: ["MySQL", "PostgreSQL", "SQL"],
-      tools: ["Git & GitHub", "Docker", "Postman", "Swagger", "Render", "Vercel"]
+      tools: ["Git & GitHub", "Docker", "Postman", "Swagger", "Render", "Vercel", "PlatformIO"]
     },
     pubScholarship: {
       title: "Beasiswa PUB (Pemberdayaan Masyarakat Berkelanjutan)",
@@ -442,6 +550,16 @@ const data: Record<string, PortfolioData> = {
               techStack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
               category: "Frontend",
               featured: false
+            },
+            {
+              id: 3,
+              title: "Greeceri Store - E-Commerce Full-Stack (UAS)",
+              description: "Mengembangkan platform e-commerce full-stack lengkap untuk belanja sayuran dan bahan makanan segar. Membangun frontend dengan React + Vite dan backend dengan Java Spring Boot. Mengintegrasikan payment gateway Xendit dan Google OAuth untuk autentikasi pengguna yang praktis.",
+              githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
+              liveDemoUrl: "https://www.greeceri.store/",
+              techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth"],
+              category: "Full-Stack",
+              featured: true
             }
           ]
         }
@@ -469,7 +587,78 @@ const data: Record<string, PortfolioData> = {
         featured: true,
         category: "Full-Stack"
       },
-      
+      {
+        id: 3,
+        title: "Greeceri Store - Platform E-Commerce Full-Stack",
+        description: "Platform e-commerce full-stack lengkap untuk belanja sayuran dan bahan makanan segar. Membangun frontend dengan React + Vite dan backend dengan Java Spring Boot. Dilengkapi integrasi payment gateway Xendit dan Google OAuth untuk autentikasi pengguna yang praktis.",
+        githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
+        liveDemoUrl: "https://www.greeceri.store/",
+        techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth", "REST API"],
+        image: "fullstack",
+        featured: true,
+        category: "Full-Stack"
+      },
+      {
+        id: 4,
+        title: "SmartLED Controller - Aplikasi IoT Android",
+        description: "IoT MQTT Controller adalah aplikasi Android untuk mengontrol perangkat IoT berbasis ESP8266 (Wemos D1 Mini) menggunakan protokol MQTT. Aplikasi ini memungkinkan pengguna menyalakan dan mematikan LED secara real-time serta menampilkan status koneksi perangkat IoT.",
+        githubUrl: "https://github.com/Wannzh/iot-mqtt-controller-android.git",
+        techStack: ["Java", "Android Studio", "Eclipse Paho MQTT Client", "Material Components"],
+        image: "mobile",
+        featured: false,
+        category: "Mobile"
+      },
+      {
+        id: 5,
+        title: "SmartLED Controller - Firmware ESP8266",
+        description: "Proyek IoT untuk mengontrol LED menggunakan papan development WEMOS D1 Mini (berbasis ESP8266) melalui protokol MQTT. Proyek ini dikembangkan dengan PlatformIO dan Arduino framework.",
+        githubUrl: "https://github.com/Wannzh/iot-mqtt-controller-esp8266.git",
+        techStack: ["ESP8266", "Arduino Framework", "PlatformIO", "PubSubClient", "MQTT"],
+        image: "iot",
+        featured: false,
+        category: "IoT"
+      },
+      {
+        id: 6,
+        title: "QuickPOS - Sistem Point of Sale Freelance",
+        description: "Proyek freelance profesional yang dikerjakan secara mandiri. Aplikasi Point of Sale (POS) berbasis web yang dibangun menggunakan FastAPI dengan arsitektur berlapis (layered architecture). Menggunakan file .txt sebagai data storage (file-based storage) untuk deployment yang ringan.",
+        githubUrl: "https://github.com/Wannzh/pos-web-python.git",
+        techStack: ["Python 3.10+", "FastAPI", "HTML", "CSS", "Jinja2 Templates", "Lucide Icons"],
+        image: "fullstack",
+        featured: false,
+        category: "Full-Stack"
+      },
+      {
+        id: 7,
+        title: "DigiLib - Sistem Perpustakaan Digital Freelance",
+        description: "Proyek freelance profesional yang dikembangkan secara kolaboratif dengan tim 2 orang. Sistem manajemen perpustakaan digital komprehensif yang dikembangkan sebagai penyelesaian Tugas Akhir untuk SMA Negeri 2 Plus Sipirok. Mencakup pengelolaan pengguna, katalog buku, transaksi peminjaman/pengembalian, dan laporan digital. Bertanggung jawab pada arsitektur backend dan pengembangan API.",
+        githubUrl: "https://github.com/Wannzh/Perpustakaan.git",
+        techStack: ["Java 21", "Spring Boot", "Spring Data JPA", "Spring Security", "MySQL", "Maven", "React.js", "Axios", "Tailwind CSS", "React Router DOM", "Vite"],
+        image: "fullstack",
+        featured: true,
+        category: "Full-Stack"
+      },
+      {
+        id: 8,
+        title: "AnimeVault API - REST Service Galeri Anime",
+        description: "REST API ringan yang menyediakan data informasi anime dalam format JSON. Dibangun dengan Express.js dan dirancang untuk konsumsi frontend dengan struktur endpoint yang bersih.",
+        githubUrl: "https://github.com/Wannzh/API-GALERI-ANIME.git",
+        techStack: ["Node.js", "Express", "REST API", "JSON"],
+        image: "backend",
+        featured: false,
+        category: "Backend"
+      },
+      {
+        id: 9,
+        title: "ShoeCatalog API - REST Service Katalog Produk",
+        description: "Aplikasi REST API sederhana yang menyajikan data katalog sepatu kepada klien. Seluruh informasi produk disimpan dalam file statis lokal dan didistribusikan melalui endpoint HTTP.",
+        githubUrl: "https://github.com/Wannzh/API-SEPATU.git",
+        techStack: ["Node.js", "Express", "REST API", "JSON"],
+        image: "backend",
+        featured: false,
+        category: "Backend"
+      },
+
     ],
     certificates: [
       {
@@ -534,6 +723,33 @@ const data: Record<string, PortfolioData> = {
         description: "Pelatihan pengembangan frontend modern menggunakan library React.",
         type: "Training",
         fileUrl: "*" // Ganti '*' dengan URL sertifikat Anda
+      },
+      {
+        id: 8,
+        title: "Use Generative AI for Software Development (MDL-504)",
+        issuer: "IBM SkillsBuild",
+        year: "2025",
+        description: "Sertifikasi bootcamp tentang pemanfaatan teknologi Generative AI untuk alur kerja dan peningkatan produktivitas pengembangan perangkat lunak.",
+        type: "Bootcamp",
+        fileUrl: "/assets/certificates/ibm-generative-ai-mdl504.pdf"
+      },
+      {
+        id: 9,
+        title: "IBM Granite Models for Software Development (MDL-567)",
+        issuer: "IBM SkillsBuild",
+        year: "2025",
+        description: "Sertifikasi bootcamp tentang penggunaan model foundation IBM Granite untuk tugas dan aplikasi pengembangan perangkat lunak.",
+        type: "Bootcamp",
+        fileUrl: "/assets/certificates/ibm-granite-models-mdl567.pdf"
+      },
+      {
+        id: 10,
+        title: "Code Generation and Optimization Using IBM Granite (MDL-566)",
+        issuer: "IBM SkillsBuild",
+        year: "2025",
+        description: "Sertifikasi bootcamp tentang teknik pembuatan dan optimasi kode menggunakan model AI IBM Granite.",
+        type: "Bootcamp",
+        fileUrl: "/assets/certificates/ibm-code-generation-mdl566.pdf"
       }
     ]
   }
