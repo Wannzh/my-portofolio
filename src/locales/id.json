@@ -13,8 +13,10 @@
     "contactMe": "Hubungi Saya",
     "viewProjects": "Lihat Proyek",
     "downloadCV": "Unduh CV",
-    "downloadCVEn": "Unduh CV (Inggris)",
-    "downloadCVId": "Unduh CV (Indonesia)"
+    "downloadCVBackendEn": "Unduh CV Backend (Inggris)",
+    "downloadCVBackendId": "Unduh CV Backend (Indonesia)",
+    "downloadCVFullstackEn": "Unduh CV Fullstack (Inggris)",
+    "downloadCVFullstackId": "Unduh CV Fullstack (Indonesia)"
   },
   "about": {
     "title": "Tentang Saya",

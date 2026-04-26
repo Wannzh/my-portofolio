@@ -145,32 +145,43 @@ const Projects = () => {
                   whileHover={{ y: -5 }}
                   className="bg-[#2a2a2a] border border-[#444] rounded-lg overflow-hidden hover:border-[#666] transition-all duration-300 flex flex-col"
                 >
-                  {/* Project Image Placeholder */}
+                  {/* Project Image */}
                   <div className="h-48 bg-linear-to-br from-[#333] to-[#1c1c1c] flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20">
-                      <svg
-                        width="100%"
-                        height="100%"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <defs>
-                          <pattern
-                            id={`pattern-${project.id}`}
-                            width="20"
-                            height="20"
-                            patternUnits="userSpaceOnUse"
+                    {project.thumbnail ? (
+                      <img
+                        src={project.thumbnail}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <>
+                        <div className="absolute inset-0 opacity-20">
+                          <svg
+                            width="100%"
+                            height="100%"
+                            xmlns="http://www.w3.org/2000/svg"
                           >
-                            <circle cx="10" cy="10" r="1" fill="#ffffff" />
-                          </pattern>
-                        </defs>
-                        <rect
-                          width="100%"
-                          height="100%"
-                          fill={`url(#pattern-${project.id})`}
-                        />
-                      </svg>
-                    </div>
-                    <div className="text-6xl text-[#666] z-10">{"<>"}</div>
+                            <defs>
+                              <pattern
+                                id={`pattern-${project.id}`}
+                                width="20"
+                                height="20"
+                                patternUnits="userSpaceOnUse"
+                              >
+                                <circle cx="10" cy="10" r="1" fill="#ffffff" />
+                              </pattern>
+                            </defs>
+                            <rect
+                              width="100%"
+                              height="100%"
+                              fill={`url(#pattern-${project.id})`}
+                            />
+                          </svg>
+                        </div>
+                        <div className="text-6xl text-[#666] z-10">{"<>"}</div>
+                      </>
+                    )}
                   </div>
 
                   {/* Project Content */}

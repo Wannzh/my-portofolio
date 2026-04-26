@@ -27,10 +27,7 @@ export interface Organization {
 }
 
 export interface Skills {
-  backend: string[];
-  frontend: string[];
-  database: string[];
-  tools: string[];
+  [key: string]: string[];
 }
 
 export interface Project {
@@ -41,6 +38,7 @@ export interface Project {
   githubUrl?: string;
   liveDemoUrl?: string;
   image?: string;
+  thumbnail?: string;
   featured?: boolean;
   category?: string;
 }

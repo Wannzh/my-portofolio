@@ -13,8 +13,10 @@
     "contactMe": "Contact Me",
     "viewProjects": "View Projects",
     "downloadCV": "Download CV",
-    "downloadCVEn": "Download CV (English)",
-    "downloadCVId": "Download CV (Indonesian)"
+    "downloadCVBackendEn": "Download Backend CV (English)",
+    "downloadCVBackendId": "Download Backend CV (Indonesian)",
+    "downloadCVFullstackEn": "Download Fullstack CV (English)",
+    "downloadCVFullstackId": "Download Fullstack CV (Indonesian)"
   },
   "about": {
     "title": "About Me",

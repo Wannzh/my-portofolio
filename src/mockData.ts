@@ -23,7 +23,7 @@ const data: Record<string, PortfolioData> = {
         degree: "Bachelor of Informatics Engineering",
         field: "GPA 3.66/4.00",
         startDate: "2023-09",
-        endDate: "Present",
+        endDate: "2026-09",
         description: "Recipient of the Sustainable Community Empowerment (PUB) Scholarship. 3-Year Acceleration Program."
       }
     ],
@@ -46,10 +46,11 @@ const data: Record<string, PortfolioData> = {
       }
     ],
     skills: {
-      backend: ["Java", "Spring Boot", "Spring Security", "RESTful APIs", "Hibernate/JPA", "Python", "FastAPI", "Node.js", "Express", "PHP"],
-      frontend: ["React", "JavaScript (ES6+)", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Thymeleaf"],
-      database: ["MySQL", "PostgreSQL", "SQL"],
-      tools: ["Git & GitHub", "Docker", "Postman", "Swagger", "Render", "Vercel", "PlatformIO"]
+      "Bahasa Pemrograman": ["Java", "JavaScript", "SQL", "HTML5 & CSS3", "PHP", "C", "C++"],
+      "Framework & Library": ["Spring Boot & Spring Security", "React", "Hibernate/JPA", "Tailwind CSS", "Bootstrap", "Thymeleaf"],
+      "Tools & Teknologi": ["MySQL", "PostgreSQL", "Git & GitHub", "Swagger", "Vercel", "Brevo SMTP", "Render", "Cloudinary", "Xendit API"],
+      "Konsep & Metodologi": ["Desain RESTful API", "Object-Oriented Programming (OOP)", "Agile/Git Workflow", "JWT", "RBAC", "Google OAuth"],
+      "Soft Skills": ["Kolaborasi Tim & Kepemimpinan", "Pemecahan Masalah", "Komunikasi Efektif", "Manajemen Waktu", "Adaptabilitas & Pembelajaran Berkelanjutan"]
     },
     pubScholarship: {
       title: "PUB (Sustainable Community Empowerment) Scholarship",
@@ -97,6 +98,7 @@ const data: Record<string, PortfolioData> = {
               description: "Built a movie list web app integrated with the TMDB external API. Practiced asynchronous data handling and responsive UI design.",
               githubUrl: "https://github.com/Wannzh/PROJECT-WISHLIST-MOVIE.git",
               liveDemoUrl: "https://wanflix.pages.dev/",
+              thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770166993/WanFlix_Banner_kkan5w.png",
               techStack: ["HTML5", "CSS3", "JavaScript", "TMDB API"],
               category: "Frontend",
               featured: false
@@ -164,8 +166,8 @@ const data: Record<string, PortfolioData> = {
           id: 7,
           title: "React Fundamentals",
           language: "en",
-          startDate: "2025-08",
-          endDate: "2025-12",
+          startDate: "2024-08",
+          endDate: "2024-12",
           description: "Component-based architecture, state management with React Hooks, and modern UI development with Vite.",
           projects: [
             {
@@ -174,6 +176,7 @@ const data: Record<string, PortfolioData> = {
               description: "Developed a single-page e-commerce app using React Hooks for state management and applied component-based architecture.",
               githubUrl: "https://github.com/Wannzh/uts-react-fundamental.git",
               liveDemoUrl: "https://mobile-store.alwanfdh.my.id",
+              thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770162580/Mobile_Store_Banner_vgnbft.png",
               techStack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
               category: "Frontend",
               featured: false
@@ -198,6 +201,7 @@ const data: Record<string, PortfolioData> = {
         title: "ZakatNow - Full-Stack Zakat Management Web App",
         description: "Developed a full-stack zakat and donation management web application with JWT-based authentication and Role-Based Access Control (RBAC). Implemented Xendit Payment Gateway (sandbox) and automated email notifications using JavaMail.",
         githubUrl: "https://github.com/Wannzh/zakatNow-app.git",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886718/ZakatNow_fbbjoh.png",
         liveDemoUrl: "https://zakatnow.alwanfdh.my.id/",
         techStack: ["Java Spring Boot", "React", "PostgreSQL", "Tailwind CSS", "JavaMail", "Xendit API", "JWT", "Render", "Vercel"],
         image: "fullstack",
@@ -220,6 +224,7 @@ const data: Record<string, PortfolioData> = {
         description: "A complete full-stack e-commerce platform for fresh grocery shopping. Built the frontend with React + Vite and backend with Java Spring Boot. Features include Xendit payment gateway integration and Google OAuth for seamless user authentication.",
         githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
         liveDemoUrl: "https://www.greeceri.store/",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770161386/Greeceri_Banner_hf6z0r.png",
         techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth", "REST API"],
         image: "fullstack",
         featured: true,
@@ -250,6 +255,7 @@ const data: Record<string, PortfolioData> = {
         title: "QuickPOS - Freelance Point of Sale System",
         description: "Professional freelance project developed independently. A web-based Point of Sale (POS) application built using FastAPI with layered architecture. Uses .txt files as data storage (file-based storage) for lightweight deployment.",
         githubUrl: "https://github.com/Wannzh/pos-web-python.git",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770167516/QuickPOS_-_Point_of_Sale_Banner_emnrdo.png",
         techStack: ["Python 3.10+", "FastAPI", "HTML", "CSS", "Jinja2 Templates", "Lucide Icons"],
         image: "fullstack",
         featured: false,
@@ -260,6 +266,7 @@ const data: Record<string, PortfolioData> = {
         title: "DigiLib - Freelance Digital Library System",
         description: "Professional freelance project developed collaboratively with a 2-member team. A comprehensive digital library management system built as a final thesis project for SMA Negeri 2 Plus Sipirok. Features include user management, book catalog, borrowing/returning transactions, and digital reports. Responsible for backend architecture and API development.",
         githubUrl: "https://github.com/Wannzh/Perpustakaan.git",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770168289/DigiLib_-_Digital_Library_System_Banner_s3q2mn.png",
         techStack: ["Java 21", "Spring Boot", "Spring Data JPA", "Spring Security", "MySQL", "Maven", "React.js", "Axios", "Tailwind CSS", "React Router DOM", "Vite"],
         image: "fullstack",
         featured: true,
@@ -396,7 +403,7 @@ const data: Record<string, PortfolioData> = {
         degree: "S1 Teknik Informatika",
         field: "IPK 3.66/4.00",
         startDate: "2023-09",
-        endDate: "Sekarang",
+        endDate: "2026-09",
         description: "Penerima Beasiswa Pemberdayaan Umat Berkelanjutan (PUB). Program Akselerasi 3 Tahun."
       }
     ],
@@ -419,10 +426,11 @@ const data: Record<string, PortfolioData> = {
       }
     ],
     skills: {
-      backend: ["Java", "Spring Boot", "Spring Security", "RESTful APIs", "Hibernate/JPA", "Python", "FastAPI", "Node.js", "Express", "PHP"],
-      frontend: ["React", "JavaScript (ES6+)", "HTML5 & CSS3", "Tailwind CSS", "Bootstrap", "Thymeleaf"],
-      database: ["MySQL", "PostgreSQL", "SQL"],
-      tools: ["Git & GitHub", "Docker", "Postman", "Swagger", "Render", "Vercel", "PlatformIO"]
+      "Bahasa Pemrograman": ["Java", "JavaScript", "SQL", "HTML5 & CSS3", "PHP", "C", "C++"],
+      "Framework & Library": ["Spring Boot & Spring Security", "React", "Hibernate/JPA", "Tailwind CSS", "Bootstrap", "Thymeleaf"],
+      "Tools & Teknologi": ["MySQL", "PostgreSQL", "Git & GitHub", "Swagger", "Vercel", "Brevo SMTP", "Render", "Cloudinary", "Xendit API"],
+      "Konsep & Metodologi": ["Desain RESTful API", "Object-Oriented Programming (OOP)", "Agile/Git Workflow", "JWT", "RBAC", "Google OAuth"],
+      "Soft Skills": ["Kolaborasi Tim & Kepemimpinan", "Pemecahan Masalah", "Komunikasi Efektif", "Manajemen Waktu", "Adaptabilitas & Pembelajaran Berkelanjutan"]
     },
     pubScholarship: {
       title: "Beasiswa PUB (Pemberdayaan Masyarakat Berkelanjutan)",
@@ -470,6 +478,7 @@ const data: Record<string, PortfolioData> = {
               description: "Mengembangkan aplikasi web wishlist film dengan integrasi API eksternal TMDB. Menerapkan manipulasi DOM dan desain responsif.",
               githubUrl: "https://github.com/Wannzh/PROJECT-WISHLIST-MOVIE.git",
               liveDemoUrl: "https://wanflix.pages.dev/",
+              thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770166993/WanFlix_Banner_kkan5w.png",
               techStack: ["HTML5", "CSS3", "JavaScript", "TMDB API"],
               category: "Frontend",
               featured: false
@@ -537,8 +546,8 @@ const data: Record<string, PortfolioData> = {
           id: 7,
           title: "React Fundamental",
           language: "id",
-          startDate: "2025-08",
-          endDate: "2025-12",
+          startDate: "2024-08",
+          endDate: "2024-12",
           description: "Arsitektur berbasis komponen, manajemen state dengan React Hooks, dan pengembangan UI modern dengan Vite.",
           projects: [
             {
@@ -547,6 +556,7 @@ const data: Record<string, PortfolioData> = {
               description: "Membangun aplikasi e-commerce satu halaman dengan pengelolaan state menggunakan React Hooks dan menerapkan konsep component-based development.",
               githubUrl: "https://github.com/Wannzh/uts-react-fundamental.git",
               liveDemoUrl: "https://mobile-store.alwanfdh.my.id",
+              thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770162580/Mobile_Store_Banner_vgnbft.png",
               techStack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
               category: "Frontend",
               featured: false
@@ -557,6 +567,7 @@ const data: Record<string, PortfolioData> = {
               description: "Mengembangkan platform e-commerce full-stack lengkap untuk belanja sayuran dan bahan makanan segar. Membangun frontend dengan React + Vite dan backend dengan Java Spring Boot. Mengintegrasikan payment gateway Xendit dan Google OAuth untuk autentikasi pengguna yang praktis.",
               githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
               liveDemoUrl: "https://www.greeceri.store/",
+              thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770161386/Greeceri_Banner_hf6z0r.png",
               techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth"],
               category: "Full-Stack",
               featured: true
@@ -571,6 +582,7 @@ const data: Record<string, PortfolioData> = {
         title: "ZakatNow - Aplikasi Pengelolaan Zakat Full-Stack",
         description: "Mengembangkan aplikasi web full-stack untuk pengelolaan zakat dan donasi dengan sistem autentikasi berbasis JWT dan Role-Based Access Control (RBAC). Mengimplementasikan Payment Gateway Xendit (sandbox) dan notifikasi email otomatis.",
         githubUrl: "https://github.com/Wannzh/zakatNow-app.git",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886718/ZakatNow_fbbjoh.png",
         liveDemoUrl: "https://zakatnow.alwanfdh.my.id/",
         techStack: ["Java Spring Boot", "React", "PostgreSQL", "Tailwind CSS", "JavaMail", "Xendit API", "JWT", "Render", "Vercel"],
         image: "fullstack",
@@ -593,6 +605,7 @@ const data: Record<string, PortfolioData> = {
         description: "Platform e-commerce full-stack lengkap untuk belanja sayuran dan bahan makanan segar. Membangun frontend dengan React + Vite dan backend dengan Java Spring Boot. Dilengkapi integrasi payment gateway Xendit dan Google OAuth untuk autentikasi pengguna yang praktis.",
         githubUrl: "https://github.com/Wannzh/greeceri-store-fe.git",
         liveDemoUrl: "https://www.greeceri.store/",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770161386/Greeceri_Banner_hf6z0r.png",
         techStack: ["React", "Vite", "Tailwind CSS", "Java Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth", "REST API"],
         image: "fullstack",
         featured: true,
@@ -623,6 +636,7 @@ const data: Record<string, PortfolioData> = {
         title: "QuickPOS - Sistem Point of Sale Freelance",
         description: "Proyek freelance profesional yang dikerjakan secara mandiri. Aplikasi Point of Sale (POS) berbasis web yang dibangun menggunakan FastAPI dengan arsitektur berlapis (layered architecture). Menggunakan file .txt sebagai data storage (file-based storage) untuk deployment yang ringan.",
         githubUrl: "https://github.com/Wannzh/pos-web-python.git",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770167516/QuickPOS_-_Point_of_Sale_Banner_emnrdo.png",
         techStack: ["Python 3.10+", "FastAPI", "HTML", "CSS", "Jinja2 Templates", "Lucide Icons"],
         image: "fullstack",
         featured: false,
@@ -633,6 +647,7 @@ const data: Record<string, PortfolioData> = {
         title: "DigiLib - Sistem Perpustakaan Digital Freelance",
         description: "Proyek freelance profesional yang dikembangkan secara kolaboratif dengan tim 2 orang. Sistem manajemen perpustakaan digital komprehensif yang dikembangkan sebagai penyelesaian Tugas Akhir untuk SMA Negeri 2 Plus Sipirok. Mencakup pengelolaan pengguna, katalog buku, transaksi peminjaman/pengembalian, dan laporan digital. Bertanggung jawab pada arsitektur backend dan pengembangan API.",
         githubUrl: "https://github.com/Wannzh/Perpustakaan.git",
+        thumbnail: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770168289/DigiLib_-_Digital_Library_System_Banner_s3q2mn.png",
         techStack: ["Java 21", "Spring Boot", "Spring Data JPA", "Spring Security", "MySQL", "Maven", "React.js", "Axios", "Tailwind CSS", "React Router DOM", "Vite"],
         image: "fullstack",
         featured: true,

@@ -126,22 +126,40 @@ const Hero = () => {
                   className="absolute top-full mt-2 w-full bg-[#2a2a2a] border border-[#444] rounded shadow-lg z-50 overflow-hidden"
                 >
                   <a
-                    href="/assets/cv-en.pdf"
+                    href="/assets/Muhamad-Alwan-Fadhlurrohman_Backend-Engineer_Resume.pdf"
                     download
                     onClick={() => setShowCVDropdown(false)}
                     className="flex px-6 py-3 text-[#e0e0e0] hover:bg-[#333] hover:text-[#ffffff] transition-colors duration-300 items-center gap-2"
                   >
                     <Download size={16} />
-                    <span className="text-sm">{t('hero.downloadCVEn')}</span>
+                    <span className="text-sm">{t('hero.downloadCVBackendEn')}</span>
                   </a>
                   <a
-                    href="/assets/cv-id.pdf"
+                    href="/assets/Muhamad-Alwan-Fadhlurrohman_Backend-Engineer_CV.pdf"
                     download
                     onClick={() => setShowCVDropdown(false)}
                     className="flex px-6 py-3 text-[#e0e0e0] hover:bg-[#333] hover:text-[#ffffff] transition-colors duration-300 items-center gap-2 border-t border-[#444]"
                   >
                     <Download size={16} />
-                    <span className="text-sm">{t('hero.downloadCVId')}</span>
+                    <span className="text-sm">{t('hero.downloadCVBackendId')}</span>
+                  </a>
+                  <a
+                    href="/assets/Muhamad-Alwan-Fadhlurrohman_Full-Stack-Developer_Resume.pdf"
+                    download
+                    onClick={() => setShowCVDropdown(false)}
+                    className="flex px-6 py-3 text-[#e0e0e0] hover:bg-[#333] hover:text-[#ffffff] transition-colors duration-300 items-center gap-2 border-t border-[#444]"
+                  >
+                    <Download size={16} />
+                    <span className="text-sm">{t('hero.downloadCVFullstackEn')}</span>
+                  </a>
+                  <a
+                    href="/assets/Muhamad-Alwan-Fadhlurrohman_Full-Stack-Developer_CV.pdf"
+                    download
+                    onClick={() => setShowCVDropdown(false)}
+                    className="flex px-6 py-3 text-[#e0e0e0] hover:bg-[#333] hover:text-[#ffffff] transition-colors duration-300 items-center gap-2 border-t border-[#444]"
+                  >
+                    <Download size={16} />
+                    <span className="text-sm">{t('hero.downloadCVFullstackId')}</span>
                   </a>
                 </motion.div>
               )}
